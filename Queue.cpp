@@ -8,13 +8,35 @@ Queue::Queue( int* myHeadPtr, int value )
 }
 
 Queue::~Queue() {
-
+    setHeadPtr(nullptr);
+    setTailPtr(nullptr);
+    setCapacity(0);
 }
 
 void Queue::addItem( int myItem ) {
-
+//    queue.
 }
 
 int Queue::getItem( int index ) const {
+
+}
+
+void Queue::removeItem( int index ) {
+
+}
+
+void Queue::setTailPtr( int* ptr ) {
+
+}
+
+int* Queue::getTailPtr() {
+
+}
+
+void Queue::incrementTailPtr() {
+
+}
+
+void Queue::decrementTailPtr() {
 
 }

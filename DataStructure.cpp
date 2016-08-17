@@ -1,38 +1,55 @@
 #include "DataStructure.h"
 using namespace std;
 
-DataStructure::DataStructure( int* headPtr, int mySize ) {
+DataStructure::DataStructure( int* headPtr, int myCapacity, int myNumElements ) {
     setHeadPtr(headPtr);
-    setSize(mySize);
+    setCapacity(myCapacity);
+    setNumElements( myNumElements );
 }
 
 DataStructure::~DataStructure() {
     headPtr = nullptr;
-    size = 0;
+    capacity = 0;
 }
 
 void DataStructure::setHeadPtr( int* myHeadPtr ) {
     headPtr = myHeadPtr;
 }
 
-void DataStructure::setSize(int mySize) {
-    size = mySize;
-}
-
 int* DataStructure::getHeadPtr() const {
     return headPtr;
 }
 
-int DataStructure::getSize() const {
-    return size;
+void DataStructure::setCapacity(int myCapacity) {
+    capacity = myCapacity;
 }
 
-void DataStructure::incrementSize() {
-    size++;
+int DataStructure::getCapacity() const {
+    return capacity;
 }
 
-void DataStructure::decrementSize() {
-    size--;
+void DataStructure::incrementCapacity() {
+    capacity++;
+}
+
+void DataStructure::decrementCapacity() {
+    capacity--;
+}
+
+void DataStructure::setNumElements( int myNumElements ) {
+    numElements = myNumElements;
+}
+
+int DataStructure::getNumElements() const {
+    return numElements;
+}
+
+void DataStructure::incrementNumElements() {
+
+}
+
+void DataStructure::decrementNumElements() {
+
 }
 
 //virtual void DataStructure::addItem( int myItem );
