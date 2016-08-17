@@ -13,7 +13,7 @@ Queue::~Queue() {
     setCapacity(0);
 }
 
-void Queue::addItem( int myItem ) {
+void Queue::addItem( int value ) {
 //    queue.
 }
 

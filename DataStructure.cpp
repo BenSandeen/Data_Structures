@@ -45,11 +45,11 @@ int DataStructure::getNumElements() const {
 }
 
 void DataStructure::incrementNumElements() {
-
+    numElements++;
 }
 
 void DataStructure::decrementNumElements() {
-
+    numElements--;
 }
 
 //virtual void DataStructure::addItem( int myItem );

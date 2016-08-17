@@ -35,11 +35,11 @@ const Node<int>* LinkedList::getHeadNodePtr() const {
     return &headNode;
 }
 
-void LinkedList::addItem( int item ) {
+void LinkedList::addItem( int value ) {
     cout << "in LinkedList's addItem() function" << endl;
     Node<int> tailNode = getNode( this->getNumElements() );
     Node<int> newNode;
-    newNode.value = item;
+    newNode.value = value;
     newNode.next = nullptr;
     tailNode.next = &newNode;
 }
